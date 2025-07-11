@@ -188,13 +188,14 @@ body{
   
     padding: 4px;
     
-    overflow-x: auto;
+    /* overflow-x: auto; */
 
 }
 .timeCard{
     display: flex;
     /* grid-template-rows:1fr 2fr 1fr; */
-    border:2px red solid;
+    /* border:2px red solid; */
+    background-color: #556e6d;
     border-radius: 13px;
     flex-direction: column;
     width: 250px;
@@ -207,10 +208,10 @@ body{
     display: flex;
     align-items: center;
 }
-.timeIcon{
-    
-   max-width: 70px;
-   max-height: 70px;
+
+.timeIcon svg{
+     width: 40px;
+   height: 40px;
 }
 .time{
     font-size: larger ;
@@ -224,12 +225,12 @@ body{
 /* .container{
     border:3px red solid;    
 } */
-.qw{
+/* .qw{
     border:3px rgb(135, 160, 154) dotted; 
 }
 /* #ErrorBox{
     border: 2px white double;
 } */
-#weatherBox{
+/* #weatherBox{
     border:2px blanchedalmond solid;
-}
+} */ 

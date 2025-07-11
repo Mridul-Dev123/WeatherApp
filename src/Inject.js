@@ -11,9 +11,10 @@ function updateTime(hours)
             card.innerHTML=`
                           <div class="time t">${ele.time}</div>
                  <div class="mid">
-                  <div class="timeIcon">       
-</div>
-             ${svgs[ele.icon]}
+                  <div class="timeIcon">     
+                    ${svgs[ele.icon]}  
+                             </div>
+           
            <div>
                 <div><span class="temp">${ele.temp}</span>&deg <span class="uni">F</span></div>
                 <div>Rain Chance: ${ele.rainChance}%</div>
@@ -53,6 +54,7 @@ const update=function(data)
     id("address").innerHTML=data.address;
     id("timezone").innerHTML=data.timezone;
      updateDay(data.today)
+       let g=document.querySelectorAll(".uni");
 
 }
 export default update;

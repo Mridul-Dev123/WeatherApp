@@ -26,6 +26,18 @@ form.addEventListener("submit", (e)=>{
         update(da);
         id("ErrorBox").innerHTML="Data Fetched Successfully"
     })
+    .then((e)=>
+    {
+      if(!isFeh)
+      {
+          const current = id("current");
+  const next = id("next");
+   isFeh=!isFeh;
+   changeUni('F')
+  current.id = "next";
+  next.id = "current";
+      }
+    })
     .catch((e)=>{
         console.log("Error Occuered", e)
         id("ErrorBox").innerHTML=`Some error occured for retrieving data for ${city}`
@@ -56,9 +68,9 @@ callWeatherApi("London").then((data)=>
         currentData=da;
         update(da);
         id("ErrorBox").innerHTML="Welcome to weather Site"
-        toggle();
+        
     })
-
+    .then(toggle)
 
 
 

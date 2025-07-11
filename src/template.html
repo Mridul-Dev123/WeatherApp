@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="hello"></div>
+    <div class="container">
+    <h1>Weather App</h1>
+    <form class="search-box">
+      <input type="text" placeholder="Enter city name..." id="cityInput" required/>
+      <button id="searchBtn" type="submit">🔍</button>
+    </form>
+    <div>
+        <span id="current">°F</span>  /  <span id="next">°C</span>
+    </div>
+  </div>
+  <div id="ErrorBox">Error:404</div>
+
+  <div id="weatherBox" >
+      <div id="weatherCard" class="qw">
+          <div id="upperCard">
+            <div id="dateTime"><div id="date">Date</div>
+                      <div style="font-size: 15px;"><span class="head">TimeZone: </span><span id="timezone"></span></div></div>
+            <div id="address">Address</div>
+            <div id="longlat">
+                <div><strong class="head">longitude: </strong><span id="longitude">12.e324</span></div>
+                <div><strong class="head">latitude: </strong><span id="latitude">12.e324</span></div>
+            </div>
+          </div>
+          <div id="middleCard">
+            <div id="conditionsSection">
+                 <div id="icon">
+                   
+  </div>
+    <div id="cond">
+                      <div style="font-size: 23px; font-weight: 900; color:cornsilk; font-family: Roboto; text-align: center;"> <span id="conditions">rainy and dry</span></div>
+                       <div><span id="description">Similar temperatures continuing with no rain expected.</span></div>
+                  
+              </div>
+
+                 </div>  
+                 <div id="tempSec">
+                    <div><strong class="head">Temp:</strong> <span id="cardTemp" class="temp">23</span>&deg <span class="uni">F</span></div>
+                     <div> <strong class="head">Feels Like:</strong> <span id="feelLike" class="temp">23</span>&deg <span class="uni">F</span></div>
+                     <div><strong class="head">Chance of rain:</strong> <span id="rainChance">23</span>%</div>
+                 </div>
+          </div>
+       
+          </div>
+        
+            
+
+
+    
+      <div id="sun" class="qw"><div>🌅<span class="sideHead">Sunrise: </span><span id="sunrise">20:00pm</span></div>
+                               <div>
+                                    🌇<span class="sideHead">Sunset: </span>
+                                       <span id="sunset">10:20pm</span>  
+                               </div></div>
+      <div id="minmax" class="qw"><div>
+                      <span class="sideHead">Min: </span><span id="minTemp" class="temp">29</span>&deg <span class="uni">F</span>
+                                    </div>
+                                   <div>
+                                     <span class="sideHead">Max: </span><span id="maxTemp" class="temp">29</span>&deg <span class="uni">F</span>
+                                   </div>
+                                  </div>
+      <div id="wind" class="qw"><span class="sideHead">💨Wind Speed: </span><span id="windSpeed"></span>mph</div>
+      <div id="Humidity" class="qw">💦<span class="sideHead">Humidity: </span><span id="humidity"></span>%</div>
+      <div id="time" class="qw">
+        <div class="timeCard">
+                 <div class="time t">23:00</div>
+                 <div class="mid">
+                  <div class="timeIcon">       
+</div>
+           <div>
+                <div><span class="temp">23</span>&deg <span class="uni">F</span></div>
+                <div>Rain Chance: 23%</div>
+           </div>
+
+                 </div>
+                 <div> Partly cloudy</div>
+           
+        </div>
+
+
+
+      </div>
+
+
+
+
+  </div>
 </body>
 </html>

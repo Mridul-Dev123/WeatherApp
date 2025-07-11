@@ -29,7 +29,7 @@ This Weather App provides real-time weather information by integrating with a th
 -   **HTML5:** For structuring the web content.
 -   **CSS3:** For styling and ensuring a responsive design.
 -   **JavaScript (ES6+):** For all application logic, API calls, and DOM manipulation.
--   **[WeatherAPI](https://www.weatherapi.com/) (or similar, e.g., Visual Crossing API):** Utilized for fetching real-time weather data.
+-   **[Visual Crossing Weather API](https://www.visualcrossing.com/weather-api):** Utilized for fetching real-time weather data.
 -   **Webpack (Optional, if used for bundling):** For bundling JavaScript modules and assets.
 
 ## How to Use
@@ -54,16 +54,16 @@ To run this project locally, follow these steps:
     ```bash
     npm install
     ```
-4.  **Obtain an API Key:**
-    -   Go to [WeatherAPI.com](https://www.weatherapi.com/) (or the API provider you used).
+4.  **Obtain an API Key from Visual Crossing:**
+    -   Go to [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api).
     -   Sign up for a free account and obtain your API key.
     -   **Important:** For this project, you might have exposed your API key directly in the client-side JavaScript. In a production environment, it's crucial to handle API keys securely (e.g., using environment variables and a backend server).
 
-5.  **Configure API Key:**
+5.  **Configure Visual Crossing API Key:**
     -   Open your JavaScript file (e.g., `src/index.js` or `script.js`).
-    -   Locate where the API key is used and replace the placeholder with your actual API key. For example:
+    -   Locate where the API key is used and replace the placeholder with your actual Visual Crossing API key. For example:
         ```javascript
-        const API_KEY = 'YOUR_WEATHER_API_KEY_HERE';
+        const API_KEY = 'YOUR_VISUAL_CROSSING_API_KEY_HERE';
         ```
 6.  **Open in Browser:**
     -   Simply open the `index.html` file in your web browser.
@@ -76,7 +76,7 @@ To run this project locally, follow these steps:
 ## Acknowledgements
 
 -   This project was completed as part of [The Odin Project](https://www.theodinproject.com/).
--   Weather data provided by [WeatherAPI.com](https://www.weatherapi.com/).
+-   Weather data provided by [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api).
 
 ## License
 
